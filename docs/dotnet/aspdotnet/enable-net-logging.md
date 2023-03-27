@@ -1,10 +1,13 @@
-# Owin Auth Logging
+---
+sidebar_position: 1
+---
 
-This will enable logging of the Owin authentication process.
+# Enable System.Net Logging
+
+The following code snippet shows how to enable System.Net logging in ASP.NET.
 
 ```xml
 <configuration>
-  .....
   <system.diagnostics>
     <switches>
       <add name="Microsoft.Owin" value="Verbose" />
@@ -27,3 +30,7 @@ This will enable logging of the Owin authentication process.
   </system.diagnostics>
 </configuration>
 ```
+
+## References
+
+- [OWIN Logging](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-5.0#owin-logging)

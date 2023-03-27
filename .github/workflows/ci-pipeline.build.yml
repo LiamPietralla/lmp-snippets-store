@@ -1,0 +1,43 @@
+name: Build
+
+on:
+  # Run this pipeline for all pull requests
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    # Job name
+    name: Build
+    
+    # Run on ubuntu
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # Checkout Repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Install Node
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+
+      # Install Dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # Build
+      - name: Build
+        run: npm run build
+
+      # Upload Artifact
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: build

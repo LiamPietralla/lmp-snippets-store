@@ -4,7 +4,7 @@ on:
   # Run this pipeline for all pull requests
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   build:

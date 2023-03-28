@@ -1,0 +1,8 @@
+{
+  "label": "Entity Framework Core",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Entity Framework Core is a lightweight and extensible version of the popular Entity Framework data access technology. Entity Framework Core is a modern object-database mapper for .NET. It supports LINQ queries, change tracking, updates, and schema migrations."
+  }
+}

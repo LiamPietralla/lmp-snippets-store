@@ -89,7 +89,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['java', 'csharp', 'cpp', 'python', 'php', 'sql'],
+        additionalLanguages: ['java', 'csharp', 'cpp', 'python', 'php', 'sql', 'powershell'],
       },
       colorMode: {
         defaultMode: 'dark',

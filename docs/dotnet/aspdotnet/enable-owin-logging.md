@@ -4,19 +4,26 @@ sidebar_position: 1
 
 # Enable OWIN Logging
 
-The following code snippet shows how to enable OWIN logging in ASP.NET.
+The following code snippet shows how to enable Microsoft.OWIN logging in ASP.NET.
 
 ```xml
 <configuration>
   <system.diagnostics>
-    <trace autoflush="true" />
-    <sharedListeners>
-      <add name="file" initializeData="D:\\network.log" type="System.Diagnostics.TextWriterTraceListener" />
-    </sharedListeners>
+    <switches>
+      <add name="Microsoft.Owin" value="Verbose" />
+    </switches>
+    <trace autoflush="true" /> 
     <sources>
-      <source name="System.Net" switchValue="Verbose">
+      <source name="Microsoft.Owin">
         <listeners>
-          <add name="file" />
+          <add name="console" />
+        </listeners>
+      </source>
+      <source name="Microsoft.Owin">
+        <listeners>
+          <add name="file" 
+               type="System.Diagnostics.TextWriterTraceListener" 
+               initializeData="traces-Owin.log" />
         </listeners>
       </source>
     </sources>
@@ -26,4 +33,4 @@ The following code snippet shows how to enable OWIN logging in ASP.NET.
 
 ## References
 
-- [System.Net Logging](https://docs.microsoft.com/en-us/dotnet/framework/network-programming/system-net-logging)
+- [OWIN Logging](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-5.0#owin-logging)

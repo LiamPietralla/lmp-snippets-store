@@ -9,21 +9,14 @@ The following code snippet shows how to enable System.Net logging in ASP.NET.
 ```xml
 <configuration>
   <system.diagnostics>
-    <switches>
-      <add name="Microsoft.Owin" value="Verbose" />
-    </switches>
-    <trace autoflush="true" /> 
+    <trace autoflush="true" />
+    <sharedListeners>
+      <add name="file" initializeData="D:\\network.log" type="System.Diagnostics.TextWriterTraceListener" />
+    </sharedListeners>
     <sources>
-      <source name="Microsoft.Owin">
+      <source name="System.Net" switchValue="Verbose">
         <listeners>
-          <add name="console" />
-        </listeners>
-      </source>
-      <source name="Microsoft.Owin">
-        <listeners>
-          <add name="file" 
-               type="System.Diagnostics.TextWriterTraceListener" 
-               initializeData="traces-Owin.log" />
+          <add name="file" />
         </listeners>
       </source>
     </sources>
@@ -33,4 +26,4 @@ The following code snippet shows how to enable System.Net logging in ASP.NET.
 
 ## References
 
-- [OWIN Logging](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-5.0#owin-logging)
+- [System.Net Logging](https://docs.microsoft.com/en-us/dotnet/framework/network-programming/system-net-logging)

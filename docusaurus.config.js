@@ -42,6 +42,9 @@ const config = {
     ],
   ],
 
+  // Load the custom script inject plugin
+  plugins: [require.resolve('./custom-plugins/script-inject.js')],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

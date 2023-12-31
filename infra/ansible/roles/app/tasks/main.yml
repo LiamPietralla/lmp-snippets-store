@@ -1,0 +1,25 @@
+- name: Run Code App Container
+  docker_container: 
+    name: code
+    image: liamp1/code:latest
+    pull: yes
+    ports:
+      - "5200:80"
+    restart_policy: unless-stopped
+
+- name: Copy nginx config file
+  copy:
+    src: nginx.conf
+    dest: /etc/nginx/sites-available/code
+    force: no
+
+- name: Create symlink to code
+  file:
+    src: /etc/nginx/sites-available/code
+    dest: /etc/nginx/sites-enabled/code
+    state: link
+
+- name: Restart Nginx
+  service:
+    name: nginx
+    state: restarted

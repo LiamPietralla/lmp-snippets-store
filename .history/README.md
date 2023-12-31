@@ -26,16 +26,14 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-Using SSH:
+Deployment is done using a docker container. Build the docker image using the following command:
 
 ```
-$ USE_SSH=true yarn deploy
+$ docker build -t code-website .
 ```
 
-Not using SSH:
+Then run the container using the following command:
 
 ```
-$ GIT_USER=<Your GitHub username> yarn deploy
+$ docker run -d -p 80:80 code-website
 ```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

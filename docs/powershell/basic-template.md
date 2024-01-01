@@ -1,10 +1,6 @@
----
-sidebar_position: 1
----
-
 # PowerShell Script Template
 
-This is a basic template for a power shell script, that can be used as a starting point for your own scripts.
+This is a basic template for a PowerShell script, that can be used as a starting point for your own scripts.
 
 ## Prerequisites
 

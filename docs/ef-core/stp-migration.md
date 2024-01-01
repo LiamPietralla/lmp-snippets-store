@@ -21,7 +21,7 @@ Add-Migration AddUserStoredProcedure
 ```
 
 
-This wil add a migration file similar to the following:
+This will add a migration file similar to the following:
 
 ```csharp
 public partial class AddUserStoredProcedure : Migration

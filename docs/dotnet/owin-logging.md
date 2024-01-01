@@ -1,7 +1,3 @@
----
-outline: deep
----
-
 # Enable OWIN Logging in .NET Framework
 
 The following code snippet shows how to enable Microsoft.OWIN logging in ASP.NET. OWIN logging is mostly useful for debugging issues relating to user sign in / flow, especially when using external identity providers such as Google, Facebook, etc.

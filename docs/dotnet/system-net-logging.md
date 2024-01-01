@@ -1,7 +1,3 @@
----
-outline: deep
----
-
 # Enable System.NET Logging in .NET Framework
 
 The following code snippet shows how to enable System.NET logging in ASP.NET. System.NET logging is mostly useful for debugging issues relating to HTTP requests and responses. Often this is useful when proxies are involved, or when you need to see the raw HTTP request and response.

@@ -12,6 +12,9 @@ hero:
     - theme: alt
       text: EF Core
       link: /ef-core/
+    - theme: alt
+      text: PowerShell
+      link: /powershell/
 
 # features:
 #   - title: Feature A

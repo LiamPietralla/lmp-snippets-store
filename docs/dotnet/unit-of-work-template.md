@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Unit of Work Pattern
 
 The unit of work pattern is a way to manage the state of multiple objects in a single transaction. This pattern is useful when you need to update multiple objects in a single transaction, and you need to ensure that all of the objects are updated successfully or none of them are updated.
@@ -163,7 +159,7 @@ public class UnitOfWork: IDisposable, IUnitOfWork
 }
 ```
 
-:::tip
+::: tip
 
 Add extra repositories for each model you have in your source code. For example, if you have a `Item` model, add a `ItemRepository` property to the `UnitOfWork` class.
 

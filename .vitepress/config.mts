@@ -13,10 +13,29 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '.NET',
+        link: '/dotnet/',
+        collapsed: true,
         items: [
-          { text: '.NET', link: '/dotnet/' },
-          { text: 'EF Core', link: '/ef-core/' }
+          { text: 'OWIN Logging', link: '/dotnet/owin-logging' },
+          { text: 'System.NET Logging', link: '/dotnet/system-net-logging' },
+          { text: 'Unit Of Work Template', link: '/dotnet/unit-of-work-template' },
+        ]
+      },
+      {
+        text: 'EF Core',
+        link: '/ef-core/',
+        collapsed: true,
+        items: [
+          { text: 'Stored Procedure Migration', link: '/ef-core/stp-migration' },
+        ]
+      },
+      {
+        text: 'PowerShell',
+        link: '/powershell/',
+        collapsed: true,
+        items: [
+          { text: 'Basic Template', link: '/powershell/basic-template' },
         ]
       }
     ],

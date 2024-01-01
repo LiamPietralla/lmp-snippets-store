@@ -8,18 +8,20 @@ Sometimes even when working with an ORM like Entity Framework Core, you need to 
 
 ## Add Migration
 
-The first step is to add a migration to your DB Context, if working with the dotnet CLI, you can use the following command:
+The first step is to add a migration to your DB Context:
 
-```bash
+::: code-group
+
+```bash [dotnet CLI]
 dotnet ef migrations add AddUserStoredProcedure
 ```
 
-If working with the Package Manager Console, you can use the following command:
 
-```bash
+```bash [Package Manager Console]
 Add-Migration AddUserStoredProcedure
 ```
 
+:::
 
 This will add a migration file similar to the following:
 
@@ -71,12 +73,14 @@ public partial class AddUserStoredProcedure : Migration
 
 Once the migration has been added, you can update the database using the following command:
 
-```bash
+::: code-group
+
+```bash [dotnet CLI]
 dotnet ef database update
 ```
 
-If working with the Package Manager Console, you can use the following command:
-
-```bash
+```bash [Package Manager Console]
 Update-Database
 ```
+
+:::

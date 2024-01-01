@@ -15,6 +15,12 @@ hero:
     - theme: alt
       text: PowerShell
       link: /powershell/
+    - theme: alt
+      text: Ansible
+      link: /ansible/
+    - theme: alt
+      text: Terraform
+      link: /terraform/
 
 # features:
 #   - title: Feature A

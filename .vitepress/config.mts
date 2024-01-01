@@ -5,6 +5,9 @@ export default defineConfig({
   title: "Snippets",
   description: "Snippets and musings gathered from different mistakes and experience.",
   srcDir: 'docs',
+  sitemap: {
+    hostname: 'https://code.liampietralla.com'
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -36,6 +39,24 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'Basic Template', link: '/powershell/basic-template' },
+        ]
+      },
+      {
+        text: 'Ansible',
+        link: '/ansible/',
+        collapsed: true,
+        items: [
+          { text: 'Installing Docker', link: '/ansible/installing-docker' },
+          { text: 'Configure SSL', link: '/ansible/certbot-ssl' },
+          { text: 'Waiting For Servers', link: '/ansible/server-wait' },
+        ]
+      },
+      {
+        text: 'Terraform',
+        link: '/terraform/',
+        collapsed: true,
+        items: [
+          { text: 'Ansible Inventory Generation', link: '/terraform/ansible-inventory-generation' },
         ]
       }
     ],

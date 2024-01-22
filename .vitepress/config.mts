@@ -24,6 +24,7 @@ export default defineConfig({
           { text: 'System.NET Logging', link: '/dotnet/system-net-logging' },
           { text: 'Unit Of Work Template', link: '/dotnet/unit-of-work-template' },
           { text: 'JWT Authentication', link: '/dotnet/jwt-authentication' },
+          { text: 'JWT Authentication in Cookie', link: '/dotnet/jwt-authentication-cookie' },
         ]
       },
       {

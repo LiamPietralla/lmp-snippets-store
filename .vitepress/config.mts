@@ -60,6 +60,14 @@ export default defineConfig({
         items: [
           { text: 'Ansible Inventory Generation', link: '/terraform/ansible-inventory-generation' },
         ]
+      },
+      {
+        text: 'Nuxt',
+        link: '/nuxt/',
+        collapsed: true,
+        items: [
+          { text: 'Custom Fetch', link: '/nuxt/custom-fetch' },
+        ]
       }
     ],
 

@@ -21,6 +21,9 @@ hero:
     - theme: alt
       text: Terraform
       link: /terraform/
+    - theme: alt
+      text: Nuxt
+      link: /nuxt/
 
 # features:
 #   - title: Feature A

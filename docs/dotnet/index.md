@@ -5,3 +5,4 @@
 #### [Unit of Work Template](./unit-of-work-template.md)
 #### [JWT Authentication](./jwt-authentication.md)
 #### [JWT Authentication with Cookie](./jwt-authentication-cookie.md)
+#### [Google Sign in Without Identity](./google-sign-in-without-identity.md)

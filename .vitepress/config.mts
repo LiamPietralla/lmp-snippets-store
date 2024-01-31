@@ -25,6 +25,7 @@ export default defineConfig({
           { text: 'Unit Of Work Template', link: '/dotnet/unit-of-work-template' },
           { text: 'JWT Authentication', link: '/dotnet/jwt-authentication' },
           { text: 'JWT Authentication in Cookie', link: '/dotnet/jwt-authentication-cookie' },
+          { text: 'Google Sign in without Identity', link: '/dotnet/google-sign-in-without-identity' },
         ]
       },
       {

@@ -63,6 +63,14 @@ export default defineConfig({
         ]
       },
       {
+        text: 'CSS',
+        link: '/css/',
+        collapsed: true,
+        items: [
+          { text: 'Text Width HR', link: '/css/text-width-hr' },
+        ]
+      },
+      {
         text: 'Nuxt',
         link: '/nuxt/',
         collapsed: true,

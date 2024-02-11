@@ -24,6 +24,9 @@ hero:
     - theme: alt
       text: Nuxt
       link: /nuxt/
+    - theme: alt
+      text: React
+      link: /react/
 
 # features:
 #   - title: Feature A

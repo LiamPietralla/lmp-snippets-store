@@ -77,6 +77,14 @@ export default defineConfig({
         items: [
           { text: 'Custom Fetch', link: '/nuxt/custom-fetch' },
         ]
+      },
+      {
+        text: 'Nginx',
+        link: '/nginx/',
+        collapsed: true,
+        items: [
+          { text: 'Easy Reverse Proxy Config', link: '/nginx/easy-reverse-proxy-config' },
+        ]
       }
     ],
 

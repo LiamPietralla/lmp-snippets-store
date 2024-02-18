@@ -27,6 +27,9 @@ hero:
     - theme: alt
       text: Nuxt
       link: /nuxt/
+    - theme: alt
+      text: Nginx
+      link: /nginx/
 
 # features:
 #   - title: Feature A

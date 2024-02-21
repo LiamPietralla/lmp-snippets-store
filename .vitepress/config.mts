@@ -79,6 +79,14 @@ export default defineConfig({
         ]
       },
       {
+        text: 'React',
+        link: '/react/',
+        collapsed: true,
+        items: [
+          { text: 'Context with Custom Hook', link: '/react/context-with-custom-hook' },
+          ]
+      },
+      {
         text: 'Nginx',
         link: '/nginx/',
         collapsed: true,

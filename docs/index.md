@@ -27,6 +27,7 @@ hero:
     - theme: alt
       text: React
       link: /react/
+    - theme: alt
       text: CSS
       link: /css/
     - theme: alt

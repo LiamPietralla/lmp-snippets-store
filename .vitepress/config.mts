@@ -63,6 +63,14 @@ export default defineConfig({
         ]
       },
       {
+        text: 'CSS',
+        link: '/css/',
+        collapsed: true,
+        items: [
+          { text: 'Text Width HR', link: '/css/text-width-hr' },
+        ]
+      },
+      {
         text: 'Nuxt',
         link: '/nuxt/',
         collapsed: true,
@@ -76,6 +84,14 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'Context with Custom Hook', link: '/react/context-with-custom-hook' },
+          ]
+      },
+      {
+        text: 'Nginx',
+        link: '/nginx/',
+        collapsed: true,
+        items: [
+          { text: 'Easy Reverse Proxy Config', link: '/nginx/easy-reverse-proxy-config' },
         ]
       }
     ],

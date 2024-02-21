@@ -27,6 +27,11 @@ hero:
     - theme: alt
       text: React
       link: /react/
+      text: CSS
+      link: /css/
+    - theme: alt
+      text: Nginx
+      link: /nginx/
 
 # features:
 #   - title: Feature A

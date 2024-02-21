@@ -69,6 +69,14 @@ export default defineConfig({
         items: [
           { text: 'Custom Fetch', link: '/nuxt/custom-fetch' },
         ]
+      },
+      {
+        text: 'React',
+        link: '/react/',
+        collapsed: true,
+        items: [
+          { text: 'Context with Custom Hook', link: '/react/context-with-custom-hook' },
+        ]
       }
     ],
 

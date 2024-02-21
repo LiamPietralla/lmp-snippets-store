@@ -1,3 +1,3 @@
 # React Snippets and Musings
 
-#### [Custom Fetch](./custom-fetch.md)
+#### [Context with Custom Hook](./context-with-custom-hook.md)

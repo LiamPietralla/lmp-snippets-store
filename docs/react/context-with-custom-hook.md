@@ -8,7 +8,9 @@ First we are going to assume that you have a react app created already. This cou
 
 ## Create the Hook
 
-We will get started by creating a new custom hook (usually I create a `hooks` directory and place them all there) to contain our logic. This hook will be used to access the context and state.
+We will get started by creating a new custom hook (usually I create a `hooks` directory and place them all there) to contain our logic. This hook will be used to access the context and state. Both JS and TS examples are provided below.
+
+::: code-group
 
 ```jsx:line-numbers [useCounter.js]
 import { createContext, useContext, useState } from 'react';
@@ -44,6 +46,60 @@ export const useCounter = () => {
     return context;
 };
 ```
+
+```tsx:line-numbers [useCounter.tsx]
+import { createContext, useContext, useState } from 'react';
+
+type CounterContextType = {
+    count: number;
+    increaseCount: () => void;
+    decreaseCount: () => void;
+};
+
+const CounterContext = createContext<CounterContextType>({} as CounterContextType);
+
+type CounterProviderProps = {
+    children: React.ReactNode;
+};
+
+export const CounterProvider = ({ children }: CounterProviderProps) => {
+    const [count, setCount] = useState(0);
+
+    const increaseCount = () => setCount(count + 1);
+    const decreaseCount = () => setCount(count - 1);
+
+    const context = {
+        count,
+        increaseCount,
+        decreaseCount
+    };
+    
+    return (
+        <CounterContext.Provider value={context}>
+            {children}
+        </CounterContext.Provider>
+    );
+}
+
+export const useCounter = () => {
+    const context = useContext(CounterContext);
+
+    if (context === undefined) {
+        throw new Error('useCounter must be used within a CounterProvider');
+    }
+
+    return context;
+};
+```
+
+
+:::
+
+::: tip
+
+If using TypeScript ensure that your hook file type is `.tsx` and that you have the correct types defined for your context and state.
+
+:::
 
 Lets go through this and explain it. First we create our Context using `const CounterContext = createContext();`. This will allow us to store our state and methods in a single place, to access anywhere in our app (assuming we have a `CounterProvider` wrapping our app).
 

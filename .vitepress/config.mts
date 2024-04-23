@@ -93,7 +93,17 @@ export default defineConfig({
         items: [
           { text: 'Easy Reverse Proxy Config', link: '/nginx/easy-reverse-proxy-config' },
         ]
-      }
+      },
+      {
+        text: 'Github Actions',
+        link: '/github-actions/',
+        collapsed: true,
+        items: [
+          { text: 'Build and Test .NET', link: '/github-actions/build-test-dotnet' },
+          { text: 'Build and Publish Container', link: '/github-actions/build-publish-container' },
+          { text: 'Run EF Core Migrations', link: '/github-actions/run-ef-core-migrations' },
+        ]
+      },
     ],
 
     socialLinks: [

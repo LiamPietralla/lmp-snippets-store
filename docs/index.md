@@ -9,33 +9,42 @@ hero:
     - theme: alt
       text: .NET
       link: /dotnet/
-    - theme: alt
-      text: EF Core
-      link: /ef-core/
-    - theme: alt
-      text: PowerShell
-      link: /powershell/
+      
     - theme: alt
       text: Ansible
       link: /ansible/
-    - theme: alt
-      text: Terraform
-      link: /terraform/
-    - theme: alt
-      text: Nuxt
-      link: /nuxt/
-    - theme: alt
-      text: React
-      link: /react/
+
     - theme: alt
       text: CSS
       link: /css/
+
     - theme: alt
-      text: Nginx
-      link: /nginx/
+      text: EF Core
+      link: /ef-core/
+
     - theme: alt
       text: Github Actions
       link: /github-actions/
+
+    - theme: alt
+      text: Nginx
+      link: /nginx/
+
+    - theme: alt
+      text: Nuxt
+      link: /nuxt/
+
+    - theme: alt
+      text: PowerShell
+      link: /powershell/
+
+    - theme: alt
+      text: React
+      link: /react/
+
+    - theme: alt
+      text: Terraform
+      link: /terraform/
 
 # features:
 #   - title: Feature A

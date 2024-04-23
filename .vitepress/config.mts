@@ -29,22 +29,6 @@ export default defineConfig({
         ]
       },
       {
-        text: 'EF Core',
-        link: '/ef-core/',
-        collapsed: true,
-        items: [
-          { text: 'Stored Procedure Migration', link: '/ef-core/stp-migration' },
-        ]
-      },
-      {
-        text: 'PowerShell',
-        link: '/powershell/',
-        collapsed: true,
-        items: [
-          { text: 'Basic Template', link: '/powershell/basic-template' },
-        ]
-      },
-      {
         text: 'Ansible',
         link: '/ansible/',
         collapsed: true,
@@ -52,14 +36,6 @@ export default defineConfig({
           { text: 'Installing Docker', link: '/ansible/installing-docker' },
           { text: 'Configure SSL', link: '/ansible/certbot-ssl' },
           { text: 'Waiting For Servers', link: '/ansible/server-wait' },
-        ]
-      },
-      {
-        text: 'Terraform',
-        link: '/terraform/',
-        collapsed: true,
-        items: [
-          { text: 'Ansible Inventory Generation', link: '/terraform/ansible-inventory-generation' },
         ]
       },
       {
@@ -71,19 +47,21 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Nuxt',
-        link: '/nuxt/',
+        text: 'EF Core',
+        link: '/ef-core/',
         collapsed: true,
         items: [
-          { text: 'Custom Fetch', link: '/nuxt/custom-fetch' },
+          { text: 'Stored Procedure Migration', link: '/ef-core/stp-migration' },
         ]
       },
       {
-        text: 'React',
-        link: '/react/',
+        text: 'Github Actions',
+        link: '/github-actions/',
         collapsed: true,
         items: [
-          { text: 'Context with Custom Hook', link: '/react/context-with-custom-hook' },
+          { text: 'Build and Test .NET', link: '/github-actions/build-test-dotnet' },
+          { text: 'Build and Publish Container', link: '/github-actions/build-publish-container' },
+          { text: 'Run EF Core Migrations', link: '/github-actions/run-ef-core-migrations' },
         ]
       },
       {
@@ -95,13 +73,35 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Github Actions',
-        link: '/github-actions/',
+        text: 'Nuxt',
+        link: '/nuxt/',
         collapsed: true,
         items: [
-          { text: 'Build and Test .NET', link: '/github-actions/build-test-dotnet' },
-          { text: 'Build and Publish Container', link: '/github-actions/build-publish-container' },
-          { text: 'Run EF Core Migrations', link: '/github-actions/run-ef-core-migrations' },
+          { text: 'Custom Fetch', link: '/nuxt/custom-fetch' },
+        ]
+      },
+      {
+        text: 'PowerShell',
+        link: '/powershell/',
+        collapsed: true,
+        items: [
+          { text: 'Basic Template', link: '/powershell/basic-template' },
+        ]
+      },
+      {
+        text: 'React',
+        link: '/react/',
+        collapsed: true,
+        items: [
+          { text: 'Context with Custom Hook', link: '/react/context-with-custom-hook' },
+        ]
+      },
+      {
+        text: 'Terraform',
+        link: '/terraform/',
+        collapsed: true,
+        items: [
+          { text: 'Ansible Inventory Generation', link: '/terraform/ansible-inventory-generation' },
         ]
       },
     ],

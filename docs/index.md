@@ -33,6 +33,9 @@ hero:
     - theme: alt
       text: Nginx
       link: /nginx/
+    - theme: alt
+      text: Github Actions
+      link: /github-actions/
 
 # features:
 #   - title: Feature A

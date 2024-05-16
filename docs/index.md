@@ -43,6 +43,10 @@ hero:
       link: /react/
 
     - theme: alt
+      text: React Native
+      link: /react-native/
+
+    - theme: alt
       text: Terraform
       link: /terraform/
 

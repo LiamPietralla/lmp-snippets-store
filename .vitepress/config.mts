@@ -97,6 +97,16 @@ export default defineConfig({
         ]
       },
       {
+        text: 'React Native',
+        link: '/react-native/',
+        collapsed: true,
+        items: [
+          { text: 'Generic Box', link: '/react-native/generic-box' },
+          { text: 'Generic Stacks', link: '/react-native/generic-stacks' },
+          { text: 'Generic Text', link: '/react-native/generic-text' },
+        ]
+      },
+      {
         text: 'Terraform',
         link: '/terraform/',
         collapsed: true,

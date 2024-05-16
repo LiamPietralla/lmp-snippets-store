@@ -93,7 +93,7 @@ export default defineConfig({
         link: '/react/',
         collapsed: true,
         items: [
-          { text: 'Context with Custom Hook', link: '/react/context-with-custom-hook' },
+          { text: 'Basic Template', link: '/powershell/basic-template' },
         ]
       },
       {

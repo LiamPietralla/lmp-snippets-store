@@ -4,7 +4,7 @@
     image: liamp1/code:latest
     pull: yes
     ports:
-      - "5200:80"
+      - "5000:80"
     restart_policy: unless-stopped
 
 - name: Copy nginx config file

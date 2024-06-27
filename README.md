@@ -23,5 +23,3 @@ yarn dev
 The site is deployed using a custom infrastructure setup. Ansible configuration can be found in the `infra` directory which is used to deploy the lastest version of the site to a DigitalOcean droplet. The site is then served using Nginx.
 
 Deployment occurs automatically when a new commit is pushed to the `main` branch. This is done using GitHub Actions.
-
-TEST

@@ -70,6 +70,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'Easy Reverse Proxy Config', link: '/nginx/easy-reverse-proxy-config' },
+          { text: 'Adding Nginx Site', link: '/nginx/adding-nginx-site' }
         ]
       },
       {

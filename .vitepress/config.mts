@@ -14,12 +14,19 @@ export default defineConfig({
       { text: 'Home', link: '/' },
     ],
 
+    search: {
+      provider: 'local'
+    },
+
     sidebar: [
       {
         text: '.NET',
         link: '/dotnet/',
         collapsed: true,
         items: [
+          { text: 'Blazor with an API', link: '/dotnet/blazor-with-api' },
+          { text: 'Database Seeding', link: '/dotnet/database-seed' },
+          { text: 'Dockerising Blazor', link: '/dotnet/dockerising-blazor' },
           { text: 'OWIN Logging', link: '/dotnet/owin-logging' },
           { text: 'System.NET Logging', link: '/dotnet/system-net-logging' },
           { text: 'Unit Of Work Template', link: '/dotnet/unit-of-work-template' },
